@@ -1,0 +1,139 @@
+Namespace(backend='vllm', model='/grand/projects/VeloC/jye/viper2/huggingface-hub/Yarn-Llama-2-7b-64k', tokenizer='/grand/projects/VeloC/jye/viper2/huggingface-hub/Yarn-Llama-2-7b-64k', tensor_parallel_size=1, trust_remote_code=False, seed=1234, n=1, use_beam_search=False, num_prompts=1, generator='synthetic', workload='ShareGPT', dataset='/lus/grand/projects/VeloC/jye/viper2/datasets/ShareGPT_V3_unfiltered_cleaned_split.json', synthetic_type='fixed', input_len=4095, output_len=1, min_len=16, max_len=4096, prefill_to_decode_ratio=10000.0, dtype='auto', gpu_memory_utilization=0.95, swap_space=64, enforce_eager=True, max_model_len=8192, kv_cache_dtype='auto', device='cuda', enable_prefix_caching=False, enable_chunked_prefill=True, max_num_batched_tokens=8192, max_num_seqs=32, download_dir=None, block_size=16, preemption_mode='recompute', enable_mixed_batch=False)
+Loaded 1 requests, requiring 1 requests.
+Original order of the requests
+User Requests: prompt_len=4095, output_len=1, sequence_len=4096...
+Selected required requests 1
+User Requests: prompt_len=4095, output_len=1, sequence_len=4096...
+Chunked prefill is enabled. max_num_batched_tokens=8192, max_num_batched_seqs=32
+Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'original_max_position_embeddings', 'type', 'finetuned'}
+rope_scaling = {'factor': 16.0, 'original_max_position_embeddings': 4096, 'type': 'yarn', 'finetuned': True, 'rope_type': 'yarn'}
+INFO 09-24 03:53:56 config.py:654] [SchedulerConfig] max_num_batched_tokens: 8192 chunked_prefill_enabled: True
+INFO 09-24 03:53:56 llm_engine.py:103] Initializing an LLM engine (v0.4.2) with config: model='/grand/projects/VeloC/jye/viper2/huggingface-hub/Yarn-Llama-2-7b-64k', speculative_config=None, tokenizer='/grand/projects/VeloC/jye/viper2/huggingface-hub/Yarn-Llama-2-7b-64k', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto, kv_block_size=16, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1234, served_model_name=/grand/projects/VeloC/jye/viper2/huggingface-hub/Yarn-Llama-2-7b-64k, log_stats=True, preemption_mode=recompute, enable_mixed_batch=False)
+/home/jieye/viper2/vllm_v0_4_2/vllm/executor/gpu_executor.py:36: UserWarning: Failed to get the IP address, using 0.0.0.0 by default.The value can be set by the environment variable VLLM_HOST_IP or HOST_IP.
+  get_ip(), get_open_port())
+INFO 09-24 03:53:57 utils.py:660] Found nccl from library /home/jieye/.config/vllm/nccl/cu12/libnccl.so.2.18.1
+INFO 09-24 03:54:01 selector.py:27] Using FlashAttention-2 backend.
+INFO 09-24 03:54:06 model_runner.py:180] Loading model weights took 12.5669 GB
+INFO 09-24 03:54:06 model_runner.py:183] Loaded model: 
+INFO 09-24 03:54:06 model_runner.py:183]  LlamaForCausalLM(
+INFO 09-24 03:54:06 model_runner.py:183]   (model): LlamaModel(
+INFO 09-24 03:54:06 model_runner.py:183]     (embed_tokens): VocabParallelEmbedding(num_embeddings=32000, embedding_dim=4096, org_vocab_size=32000, num_embeddings_padded=32000, tp_size=1)
+INFO 09-24 03:54:06 model_runner.py:183]     (layers): ModuleList(
+INFO 09-24 03:54:06 model_runner.py:183]       (0-31): 32 x LlamaDecoderLayer(
+INFO 09-24 03:54:06 model_runner.py:183]         (self_attn): LlamaAttention(
+INFO 09-24 03:54:06 model_runner.py:183]           (qkv_proj): QKVParallelLinear(in_features=4096, output_features=12288, bias=False, tp_size=1, gather_output=False)
+INFO 09-24 03:54:06 model_runner.py:183]           (o_proj): RowParallelLinear(input_features=4096, output_features=4096, bias=False, tp_size=1, reduce_results=True)
+INFO 09-24 03:54:06 model_runner.py:183]           (rotary_emb): YaRNScalingRotaryEmbedding(head_size=128, rotary_dim=128, max_position_embeddings=4096, base=10000.0, is_neox_style=True)
+INFO 09-24 03:54:06 model_runner.py:183]           (attn): Attention(head_size=128, num_heads=32, num_kv_heads=32, scale=0.08838834764831845)
+INFO 09-24 03:54:06 model_runner.py:183]         )
+INFO 09-24 03:54:06 model_runner.py:183]         (mlp): LlamaMLP(
+INFO 09-24 03:54:06 model_runner.py:183]           (gate_up_proj): MergedColumnParallelLinear(in_features=4096, output_features=22016, bias=False, tp_size=1, gather_output=False)
+INFO 09-24 03:54:06 model_runner.py:183]           (down_proj): RowParallelLinear(input_features=11008, output_features=4096, bias=False, tp_size=1, reduce_results=True)
+INFO 09-24 03:54:06 model_runner.py:183]           (act_fn): SiluAndMul()
+INFO 09-24 03:54:06 model_runner.py:183]         )
+INFO 09-24 03:54:06 model_runner.py:183]         (input_layernorm): RMSNorm(hidden_size=4096, eps=1e-05)
+INFO 09-24 03:54:06 model_runner.py:183]         (post_attention_layernorm): RMSNorm(hidden_size=4096, eps=1e-05)
+INFO 09-24 03:54:06 model_runner.py:183]       )
+INFO 09-24 03:54:06 model_runner.py:183]     )
+INFO 09-24 03:54:06 model_runner.py:183]     (norm): RMSNorm(hidden_size=4096, eps=1e-05)
+INFO 09-24 03:54:06 model_runner.py:183]   )
+INFO 09-24 03:54:06 model_runner.py:183]   (lm_head): ParallelLMHead(num_embeddings=32000, embedding_dim=4096, org_vocab_size=32000, num_embeddings_padded=32000, tp_size=1)
+INFO 09-24 03:54:06 model_runner.py:183]   (logits_processor): LogitsProcessor(vocab_size=32000, forg_vocab_size=32000, scale=1.0, logits_as_input=False)
+INFO 09-24 03:54:06 model_runner.py:183]   (sampler): Sampler()
+INFO 09-24 03:54:06 model_runner.py:183] )
+INFO 09-24 03:54:06 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([8192]), positions.shape=torch.Size([8192]) hidden_states.shape=torch.Size([8192, 4096]) residual=None
+INFO 09-24 03:54:07 worker.py:164] Peak: 13.773 GB, Initial: 38.980 GB, Free: 25.206 GB, Total: 39.394 GB,               cache_block_size: 8388608 Bytes, available GPU for KV cache: 23.651 GB
+INFO 09-24 03:54:07 gpu_executor.py:117] # GPU blocks: 3027, # CPU blocks: 8192
+INFO 09-24 03:54:38 worker.py:189] _init_cache_engine took 23.6484 GB
+INFO 09-24 03:54:38 scheduler.py:307] Scheduler initialized with prompt limit: 8192
+INFO 09-24 03:54:38 Start warmup...
+INFO 09-24 03:54:38 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:38 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1024]), positions.shape=torch.Size([1024]) hidden_states.shape=torch.Size([1024, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 522.2 tokens/s, Avg generation throughput: 0.5 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 1960.8
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 1954.3684 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 18.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 55.4
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 54.9755 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 65.8 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 15.2
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.8325 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 67.3 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.9
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.6046 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.7
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.5385 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.7
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.5564 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.7
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.5440 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.7
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.5395 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.2 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.7
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.4999 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:40 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:40 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:40 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 67.9 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%, Interval(ms): 14.7
+INFO 09-24 03:54:40 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.5407 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1024]), positions.shape=torch.Size([1024]) hidden_states.shape=torch.Size([1024, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 14126.5 tokens/s, Avg generation throughput: 13.8 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 72.5
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 71.5108 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.3 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.6
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.4928 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.4 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.6
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.4727 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.5 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.6
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.4639 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.5 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.6
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.4460 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.3 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.6
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.4928 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 69.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.5
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.3564 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.9 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.5
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.3783 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 2.1%, CPU KV cache usage: 0.0%, Interval(ms): 14.7
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.5600 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:41 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:41 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1]) hidden_states.shape=torch.Size([1, 4096]) residual=None
+INFO 09-24 03:54:41 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 68.8 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%, Interval(ms): 14.5
+INFO 09-24 03:54:41 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 14.3881 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 09-24 03:54:46 Start benchmarking...
+INFO 09-24 03:54:46 scheduler.py:871] Scheduling chunked prefill: max_num_batched_tokens=8192, max_num_seqs=32
+INFO 09-24 03:54:46 llama.py:316] before LlamaModel forward() input_ids.shape=torch.Size([4095]), positions.shape=torch.Size([4095]) hidden_states.shape=torch.Size([4095, 4096]) residual=None
+INFO 09-24 03:54:46 metrics.py:335] Avg prompt throughput: 11964.8 tokens/s, Avg generation throughput: 2.9 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%, Interval(ms): 342.3
+INFO 09-24 03:54:46 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 322.9024 resumed_reqs=0, running_reqs=1 raw_running=1
+RequestOutput(request_id=2, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727150086.2035494, last_token_time=1727150086.5357044, first_scheduled_time=1727150086.21305, first_token_time=1727150086.535545, time_in_queue=0.009500503540039062, finished_time=1727150086.5357003, rescheduled_time=None, reget_first_token_time=None))
+Total_num_tokens: 4096
+End-to-End latency: 0.33 seconds
+Throughput: 3.01 requests/s, 12321.47 tokens/s
+Per_token_time: 0.081 ms

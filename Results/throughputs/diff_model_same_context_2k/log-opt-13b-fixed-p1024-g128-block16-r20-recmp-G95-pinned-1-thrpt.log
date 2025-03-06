@@ -1,0 +1,1050 @@
+/home/jieye/venvs/vllm_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Namespace(backend='vllm', model='/grand/projects/VeloC/jye/viper2/huggingface-hub/opt-13b', tokenizer='/grand/projects/VeloC/jye/viper2/huggingface-hub/opt-13b', tensor_parallel_size=1, trust_remote_code=False, seed=1234, n=1, use_beam_search=False, num_prompts=20, generator='synthetic', workload='ShareGPT', dataset='/lus/grand/projects/VeloC/jye/viper2/datasets/ShareGPT_V3_unfiltered_cleaned_split.json', synthetic_type='fixed', input_len=1024, output_len=128, min_len=10, max_len=50, prefill_to_decode_ratio=6.0, dtype='auto', gpu_memory_utilization=0.95, swap_space=64, enforce_eager=True, max_model_len=2048, kv_cache_dtype='auto', device='cuda', enable_prefix_caching=False, enable_chunked_prefill=False, max_num_batched_tokens=2048, max_num_seqs=256, download_dir=None, block_size=16, preemption_mode='recompute', enable_mixed_batch=False)
+Loaded 20 requests, requiring 20 requests.
+Original order of the requests
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+Selected required requests 20
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+User Requests: prompt_len=1024, output_len=128, sequence_len=1152...
+Running vLLM with default batching strategy. max_num_batched_tokens=2048, max_num_batched_seqs=256
+rope_scaling = None
+INFO 10-02 18:34:56 config.py:654] [SchedulerConfig] max_num_batched_tokens: 2048 chunked_prefill_enabled: False
+INFO 10-02 18:34:56 llm_engine.py:103] Initializing an LLM engine (v0.4.2) with config: model='/grand/projects/VeloC/jye/viper2/huggingface-hub/opt-13b', speculative_config=None, tokenizer='/grand/projects/VeloC/jye/viper2/huggingface-hub/opt-13b', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=2048, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto, kv_block_size=16, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1234, served_model_name=/grand/projects/VeloC/jye/viper2/huggingface-hub/opt-13b, log_stats=True, preemption_mode=recompute, enable_mixed_batch=False)
+/home/jieye/venvs/vllm_env/lib/python3.11/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+/home/jieye/viper2/vllm_v0_4_2_mine/vllm/executor/gpu_executor.py:36: UserWarning: Failed to get the IP address, using 0.0.0.0 by default.The value can be set by the environment variable VLLM_HOST_IP or HOST_IP.
+  get_ip(), get_open_port())
+INFO 10-02 18:34:56 utils.py:660] Found nccl from library /home/jieye/.config/vllm/nccl/cu12/libnccl.so.2.18.1
+INFO 10-02 18:35:01 selector.py:27] Using FlashAttention-2 backend.
+INFO 10-02 18:35:41 model_runner.py:180] Loading model weights took 23.9425 GB
+INFO 10-02 18:35:41 model_runner.py:183] Loaded model: 
+INFO 10-02 18:35:41 model_runner.py:183]  OPTForCausalLM(
+INFO 10-02 18:35:41 model_runner.py:183]   (model): OPTModel(
+INFO 10-02 18:35:41 model_runner.py:183]     (decoder): OPTDecoder(
+INFO 10-02 18:35:41 model_runner.py:183]       (embed_tokens): VocabParallelEmbedding(num_embeddings=50304, embedding_dim=5120, org_vocab_size=50272, num_embeddings_padded=50304, tp_size=1)
+INFO 10-02 18:35:41 model_runner.py:183]       (embed_positions): OPTLearnedPositionalEmbedding(2050, 5120)
+INFO 10-02 18:35:41 model_runner.py:183]       (final_layer_norm): LayerNorm((5120,), eps=1e-05, elementwise_affine=True)
+INFO 10-02 18:35:41 model_runner.py:183]       (layers): ModuleList(
+INFO 10-02 18:35:41 model_runner.py:183]         (0-39): 40 x OPTDecoderLayer(
+INFO 10-02 18:35:41 model_runner.py:183]           (self_attn): OPTAttention(
+INFO 10-02 18:35:41 model_runner.py:183]             (qkv_proj): QKVParallelLinear(in_features=5120, output_features=15360, bias=True, tp_size=1, gather_output=False)
+INFO 10-02 18:35:41 model_runner.py:183]             (out_proj): RowParallelLinear(input_features=5120, output_features=5120, bias=True, tp_size=1, reduce_results=True)
+INFO 10-02 18:35:41 model_runner.py:183]             (attn): Attention(head_size=128, num_heads=40, num_kv_heads=40, scale=0.08838834764831845)
+INFO 10-02 18:35:41 model_runner.py:183]           )
+INFO 10-02 18:35:41 model_runner.py:183]           (self_attn_layer_norm): LayerNorm((5120,), eps=1e-05, elementwise_affine=True)
+INFO 10-02 18:35:41 model_runner.py:183]           (fc1): ColumnParallelLinear(in_features=5120, output_features=20480, bias=True, tp_size=1, gather_output=False)
+INFO 10-02 18:35:41 model_runner.py:183]           (activation_fn): ReLU()
+INFO 10-02 18:35:41 model_runner.py:183]           (fc2): RowParallelLinear(input_features=20480, output_features=5120, bias=True, tp_size=1, reduce_results=True)
+INFO 10-02 18:35:41 model_runner.py:183]           (final_layer_norm): LayerNorm((5120,), eps=1e-05, elementwise_affine=True)
+INFO 10-02 18:35:41 model_runner.py:183]         )
+INFO 10-02 18:35:41 model_runner.py:183]       )
+INFO 10-02 18:35:41 model_runner.py:183]     )
+INFO 10-02 18:35:41 model_runner.py:183]   )
+INFO 10-02 18:35:41 model_runner.py:183]   (logits_processor): LogitsProcessor(vocab_size=50272, forg_vocab_size=50272, scale=1.0, logits_as_input=False)
+INFO 10-02 18:35:41 model_runner.py:183]   (sampler): Sampler()
+INFO 10-02 18:35:41 model_runner.py:183] )
+INFO 10-02 18:35:42 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:35:42 worker.py:164] Peak: 25.045 GB, Initial: 38.980 GB, Free: 13.935 GB, Total: 39.394 GB,               cache_block_size: 13107200 Bytes, available GPU for KV cache: 12.379 GB
+INFO 10-02 18:35:42 gpu_executor.py:117] # GPU blocks: 1014, # CPU blocks: 5242
+INFO 10-02 18:36:21 worker.py:189] _init_cache_engine took 12.3779 GB
+INFO 10-02 18:36:21 scheduler.py:307] Scheduler initialized with prompt limit: 2048
+INFO 10-02 18:36:21 Start warmup...
+INFO 10-02 18:36:21 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([21]), positions.shape=torch.Size([21])
+INFO 10-02 18:36:21 metrics.py:335] Avg prompt throughput: 608.4 tokens/s, Avg generation throughput: 29.0 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.5
+INFO 10-02 18:36:21 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.7636 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 10-02 18:36:21 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([1]), positions.shape=torch.Size([1])
+INFO 10-02 18:36:21 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 16.2 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%, Interval(ms): 61.8
+INFO 10-02 18:36:21 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 61.3685 resumed_reqs=0, running_reqs=1 raw_running=1
+INFO 10-02 18:36:26 Start benchmarking...
+INFO 10-02 18:36:26 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:27 metrics.py:335] Avg prompt throughput: 7252.3 tokens/s, Avg generation throughput: 7.1 tokens/s, Running: 2 reqs, Swapped: 0 reqs, Pending: 18 reqs, GPU KV cache usage: 12.6%, CPU KV cache usage: 0.0%, Interval(ms): 282.4
+INFO 10-02 18:36:27 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 254.6573 resumed_reqs=0, running_reqs=2 raw_running=2
+INFO 10-02 18:36:27 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:27 metrics.py:335] Avg prompt throughput: 8809.8 tokens/s, Avg generation throughput: 8.6 tokens/s, Running: 4 reqs, Swapped: 0 reqs, Pending: 16 reqs, GPU KV cache usage: 25.2%, CPU KV cache usage: 0.0%, Interval(ms): 232.5
+INFO 10-02 18:36:27 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 232.1811 resumed_reqs=0, running_reqs=4 raw_running=4
+INFO 10-02 18:36:27 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:27 metrics.py:335] Avg prompt throughput: 9069.2 tokens/s, Avg generation throughput: 8.9 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 14 reqs, GPU KV cache usage: 37.9%, CPU KV cache usage: 0.0%, Interval(ms): 225.8
+INFO 10-02 18:36:27 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 225.6396 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:27 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:27 metrics.py:335] Avg prompt throughput: 9066.7 tokens/s, Avg generation throughput: 8.9 tokens/s, Running: 8 reqs, Swapped: 0 reqs, Pending: 12 reqs, GPU KV cache usage: 50.5%, CPU KV cache usage: 0.0%, Interval(ms): 225.9
+INFO 10-02 18:36:27 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 225.7068 resumed_reqs=0, running_reqs=8 raw_running=8
+INFO 10-02 18:36:27 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 9099.4 tokens/s, Avg generation throughput: 8.9 tokens/s, Running: 10 reqs, Swapped: 0 reqs, Pending: 10 reqs, GPU KV cache usage: 63.1%, CPU KV cache usage: 0.0%, Interval(ms): 225.1
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 224.8557 resumed_reqs=0, running_reqs=10 raw_running=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 9073.8 tokens/s, Avg generation throughput: 8.9 tokens/s, Running: 12 reqs, Swapped: 0 reqs, Pending: 8 reqs, GPU KV cache usage: 75.7%, CPU KV cache usage: 0.0%, Interval(ms): 225.7
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 225.5299 resumed_reqs=0, running_reqs=12 raw_running=12
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 9101.7 tokens/s, Avg generation throughput: 8.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 88.4%, CPU KV cache usage: 0.0%, Interval(ms): 225.0
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 224.8425 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=54, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([1024]), positions.shape=torch.Size([1024])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 8374.5 tokens/s, Avg generation throughput: 8.2 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 94.7%, CPU KV cache usage: 0.0%, Interval(ms): 122.3
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 122.1108 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=54, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.5 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9362 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 428.6 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7939 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 428.4 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8191 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.1 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7087 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.7 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7137 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.8 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7016 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.7 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7095 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:28 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.8 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:28 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7021 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:28 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:28 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.5 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7292 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.2 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7114 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.6 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7142 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 429.7 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7099 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 430.0 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6837 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 430.0 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6835 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 430.1 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6742 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 428.7 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 96.2%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7545 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=39, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8535 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.6 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8768 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8511 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.6 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8816 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 428.0 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8475 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.2 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8749 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8542 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8589 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8589 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.8 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8620 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8625 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.8 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9078 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.8 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8694 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.6 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8802 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.7 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8706 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 427.6 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 97.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8761 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=24, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0280 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9774 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.1 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0053 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:29 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.9 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:29 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0213 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:29 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:29 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.6 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0459 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.3 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9848 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.2 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9944 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.1 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0425 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.3 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9882 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.0 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0122 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.3 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9903 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.1 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0053 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 426.1 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0013 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.5 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0201 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.7 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0327 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([15]), positions.shape=torch.Size([15])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 425.8 tokens/s, Running: 15 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 99.1%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0347 resumed_reqs=0, running_reqs=15 raw_running=15
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=9, required_blocks=64, threshold=10
+WARNING 10-02 18:36:30 block_manager_v1.py:320] BlockSpaceManagerV1: number of sequences > free gpu blocks, num_seqs=1, free_gpu_blocks=0
+INFO 10-02 18:36:30 scheduler.py:451] Scheduler preempt the lowest-priority sequence groups. Preempted mode: PreemptionMode.RECOMPUTE
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 401.1 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6768 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.7
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5531 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6282 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 403.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.7
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5442 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5836 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 403.1 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.7
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5366 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5819 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 403.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.7
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5418 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6336 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5705 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5566 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.7 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5674 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5747 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.8 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5664 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.3 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6072 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 402.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 93.9%, CPU KV cache usage: 0.0%, Interval(ms): 34.8
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.5802 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=62, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:30 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:30 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7290 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:30 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:30 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 401.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7152 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7579 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 401.1 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7135 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7600 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 401.1 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7073 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 401.1 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7083 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7502 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 401.2 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.6956 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.7 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7404 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7261 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.4 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7273 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 401.2 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7002 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.7 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0969 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7290 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 400.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%, Interval(ms): 34.9
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.7471 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=48, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8148 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.2 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8370 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8113 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8179 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8496 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.7 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8284 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8437 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.2 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8420 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.8 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8191 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.7 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8351 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8146 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8160 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:31 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.0
+INFO 10-02 18:36:31 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8399 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:31 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:31 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.2 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8253 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.3 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8670 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 399.2 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 96.6%, CPU KV cache usage: 0.0%, Interval(ms): 35.1
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.8742 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=34, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.8 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9979 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 398.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9829 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9874 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.4 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9984 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 398.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9793 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 398.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9796 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9846 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.8 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0025 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9851 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9829 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.2 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0153 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.7 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0060 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 397.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0113 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 398.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9801 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 398.1 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.2
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 34.9710 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.8 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 98.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0454 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=20, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.9 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0780 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1107 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.3 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1324 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1088 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.7 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.0986 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.1 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1071 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.5 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1062 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1000 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.4 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1195 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:32 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:32 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1069 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:32 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:32 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.4 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1207 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:33 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.0 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.4
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1198 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:33 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1048 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:33 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 396.6 tokens/s, Running: 14 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 99.4%, CPU KV cache usage: 0.0%, Interval(ms): 35.3
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.1074 resumed_reqs=0, running_reqs=14 raw_running=14
+WARNING 10-02 18:36:33 block_manager_v1.py:277] BlockSpaceManagerV1: free blocks will less than the threshold if allocated, current_free_gpu_blocks=6, required_blocks=68, threshold=10
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([14]), positions.shape=torch.Size([14])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 393.8 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 6 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%, Interval(ms): 35.6
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 35.3532 resumed_reqs=0, running_reqs=14 raw_running=14
+INFO 10-02 18:36:33 scheduler.py:1146] A RECOMPUTE sequence is resumed. recomputed_tokens = 1072, tokens = 0
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([1073]), positions.shape=torch.Size([1073])
+INFO 10-02 18:36:33 sequence.py:488] First token: Recomputed SeqGroup 15 recomputing 1073 tokens take 0.132842 seconds. parallel_reqs = 1 parallel_ids=[15] seqs_dict = {15: Sequence(seq_id=15, status=RUNNING, num_blocks=68)}
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 8024.8 tokens/s, Avg generation throughput: 7.5 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 5 reqs, GPU KV cache usage: 6.7%, CPU KV cache usage: 0.0%, Interval(ms): 133.7
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 133.0125 resumed_reqs=1, running_reqs=1 raw_running=0
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 9093.5 tokens/s, Avg generation throughput: 8.9 tokens/s, Running: 3 reqs, Swapped: 0 reqs, Pending: 3 reqs, GPU KV cache usage: 19.3%, CPU KV cache usage: 0.0%, Interval(ms): 225.2
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 225.0712 resumed_reqs=0, running_reqs=3 raw_running=3
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([2048]), positions.shape=torch.Size([2048])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 9002.7 tokens/s, Avg generation throughput: 8.8 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 1 reqs, GPU KV cache usage: 32.0%, CPU KV cache usage: 0.0%, Interval(ms): 227.5
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 227.2797 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([1024]), positions.shape=torch.Size([1024])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 8306.2 tokens/s, Avg generation throughput: 8.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.3%, CPU KV cache usage: 0.0%, Interval(ms): 123.3
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 123.1229 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 205.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 29.2
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 29.0606 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9570 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.3 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9689 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:33 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:33 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9527 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:33 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9183 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.8983 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9155 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9298 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9241 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9212 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9005 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9191 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9198 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9245 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.8%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9830 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 38.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9503 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9765 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9758 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9961 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9863 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0001 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9770 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9784 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0120 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.9 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0180 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9946 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9889 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9858 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.3 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.1
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9655 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0011 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.3%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.9913 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.4%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0063 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.3 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0950 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0318 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0349 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0447 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0483 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0340 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:34 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:34 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0638 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:34 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0783 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 213.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0099 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0378 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0490 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0478 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0275 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.5 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0573 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 39.9%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0821 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.3 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.0%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0979 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1222 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.9 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1386 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1243 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.1 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1103 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1301 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.9 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1374 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1355 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1281 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.5 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.4
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1434 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.9 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1479 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1513 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.0 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1200 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1103 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.5 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.2
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0712 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.3 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.5%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.0938 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 212.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 40.6%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1138 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.4 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.4
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1842 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1591 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1634 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1756 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1804 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.8 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1677 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1732 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.4
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1796 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.7 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1749 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.2 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.4
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.2054 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:35 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.9 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.3
+INFO 10-02 18:36:35 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1565 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:35 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.5 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.4
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.2001 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.6 tokens/s, Running: 6 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 41.1%, CPU KV cache usage: 0.0%, Interval(ms): 28.4
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1880 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([6]), positions.shape=torch.Size([6])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 211.5 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.0%, CPU KV cache usage: 0.0%, Interval(ms): 28.4
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 28.1999 resumed_reqs=0, running_reqs=6 raw_running=6
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4439 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.4 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4091 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4534 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.6 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4880 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4653 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4560 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4539 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.9 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4811 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.8 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4868 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.9 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4804 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4615 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4682 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.1 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4420 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4596 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.9 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4804 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4608 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.9 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4727 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 181.1 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 34.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.6
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4515 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5123 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.6 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5159 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.4 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5173 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5109 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.8 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4956 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5116 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.6 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5209 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.8 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4911 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.6 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5185 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5037 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.6 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4909 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5137 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5025 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5037 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:36 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.8 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:36 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.4949 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:36 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.7 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5137 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.3 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5698 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.4 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5598 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.2 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5447 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.5 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5469 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.3 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5686 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.3 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5681 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.5 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5390 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 179.9 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.8
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.6246 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.5 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5397 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.5 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5335 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.3 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5691 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.0 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.8
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5819 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.4 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5471 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 180.5 tokens/s, Running: 5 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 35.5%, CPU KV cache usage: 0.0%, Interval(ms): 27.7
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.5369 resumed_reqs=0, running_reqs=5 raw_running=5
+INFO 10-02 18:36:37 opt.py:248] before OPTModel forward() input_ids.shape=torch.Size([5]), positions.shape=torch.Size([5])
+INFO 10-02 18:36:37 metrics.py:335] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 179.7 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%, Interval(ms): 27.8
+INFO 10-02 18:36:37 llm_engine.py:629] LLMEngine step() (unit:ms): time_cost 27.6604 resumed_reqs=0, running_reqs=5 raw_running=5
+RequestOutput(request_id=1, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9603884, last_token_time=1727894193.1678736, first_scheduled_time=1727894186.9781651, first_token_time=1727894187.2325163, time_in_queue=0.0177767276763916, finished_time=1727894193.1678157, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=2, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9635634, last_token_time=1727894193.1678736, first_scheduled_time=1727894186.9781651, first_token_time=1727894187.2325163, time_in_queue=0.014601707458496094, finished_time=1727894193.1678216, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=3, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.964391, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.2330673, first_token_time=1727894187.4650238, time_in_queue=0.2686762809753418, finished_time=1727894193.1678264, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=4, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9651442, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.2330673, first_token_time=1727894187.4650238, time_in_queue=0.26792311668395996, finished_time=1727894193.1678305, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=5, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.965885, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.4654307, first_token_time=1727894187.6908314, time_in_queue=0.4995458126068115, finished_time=1727894193.1678345, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=6, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9665935, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.4654307, first_token_time=1727894187.6908314, time_in_queue=0.4988372325897217, finished_time=1727894193.1678386, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=7, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9678817, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.691239, first_token_time=1727894187.9167373, time_in_queue=0.7233574390411377, finished_time=1727894193.1678421, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=8, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9686158, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.691239, first_token_time=1727894187.9167373, time_in_queue=0.722623348236084, finished_time=1727894193.167846, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=9, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.969322, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.9171646, first_token_time=1727894188.1418056, time_in_queue=0.9478425979614258, finished_time=1727894193.1678493, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=10, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9700627, last_token_time=1727894193.1678736, first_scheduled_time=1727894187.9171646, first_token_time=1727894188.1418056, time_in_queue=0.9471018314361572, finished_time=1727894193.167853, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=11, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9707623, last_token_time=1727894193.1678736, first_scheduled_time=1727894188.1422, first_token_time=1727894188.3675053, time_in_queue=1.1714377403259277, finished_time=1727894193.1678567, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=12, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9715462, last_token_time=1727894193.1678736, first_scheduled_time=1727894188.1422, first_token_time=1727894188.3675053, time_in_queue=1.1706538200378418, finished_time=1727894193.1678603, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=13, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9722521, last_token_time=1727894193.1678736, first_scheduled_time=1727894188.3678887, first_token_time=1727894188.592522, time_in_queue=1.3956365585327148, finished_time=1727894193.1678638, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=14, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9729629, last_token_time=1727894193.1678736, first_scheduled_time=1727894188.3678887, first_token_time=1727894188.592522, time_in_queue=1.394925832748413, finished_time=1727894193.167872, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=15, request_type=SequenceType.RECOMPUTE, finished=True, metrics=RequestMetrics(arrival_time=1727894186.973672, last_token_time=1727894196.080026, first_scheduled_time=1727894188.5929072, first_token_time=1727894188.7148328, time_in_queue=1.6192352771759033, finished_time=1727894196.0800004, rescheduled_time=1727894193.168627, reget_first_token_time=1727894193.301469))
+RequestOutput(request_id=16, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9743888, last_token_time=1727894197.4361806, first_scheduled_time=1727894193.3018057, first_token_time=1727894193.526691, time_in_queue=6.327416896820068, finished_time=1727894197.436161, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=17, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.975135, last_token_time=1727894197.4361806, first_scheduled_time=1727894193.3018057, first_token_time=1727894193.526691, time_in_queue=6.3266706466674805, finished_time=1727894197.4361675, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=18, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.9758413, last_token_time=1727894197.4361806, first_scheduled_time=1727894193.52709, first_token_time=1727894193.7541783, time_in_queue=6.551248788833618, finished_time=1727894197.4361718, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=19, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.976555, last_token_time=1727894197.4361806, first_scheduled_time=1727894193.52709, first_token_time=1727894193.7541783, time_in_queue=6.550534963607788, finished_time=1727894197.4361753, rescheduled_time=None, reget_first_token_time=None))
+RequestOutput(request_id=20, request_type=SequenceType.RAW, finished=True, metrics=RequestMetrics(arrival_time=1727894186.977254, last_token_time=1727894197.4361806, first_scheduled_time=1727894193.754501, first_token_time=1727894193.8774948, time_in_queue=6.777247190475464, finished_time=1727894197.436179, rescheduled_time=None, reget_first_token_time=None))
+Total_num_tokens: 23040
+End-to-End latency: 10.48 seconds
+Throughput: 1.91 requests/s, 2199.28 tokens/s
+Per_token_time: 0.455 ms
