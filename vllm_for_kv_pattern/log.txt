@@ -1,0 +1,134 @@
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Processing /home/jieye/viper2/vllm_v0_4_2
+  Installing build dependencies: started
+  Installing build dependencies: still running...
+  Installing build dependencies: still running...
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: cmake>=3.21 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (3.29.2)
+Requirement already satisfied: ninja in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (1.11.1.1)
+Requirement already satisfied: psutil in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (5.9.8)
+Collecting sentencepiece (from vllm==0.4.2+cu124)
+  Downloading sentencepiece-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.7 kB)
+Requirement already satisfied: numpy in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (1.26.4)
+Requirement already satisfied: requests in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (2.31.0)
+Requirement already satisfied: py-cpuinfo in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (9.0.0)
+Requirement already satisfied: transformers>=4.40.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (4.40.1)
+Requirement already satisfied: tokenizers>=0.19.1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (0.19.1)
+Requirement already satisfied: fastapi in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (0.110.2)
+Collecting openai (from vllm==0.4.2+cu124)
+  Downloading openai-1.26.0-py3-none-any.whl.metadata (21 kB)
+Requirement already satisfied: uvicorn[standard] in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (0.29.0)
+Requirement already satisfied: pydantic>=2.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (2.7.1)
+Requirement already satisfied: prometheus-client>=0.18.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (0.20.0)
+Collecting prometheus-fastapi-instrumentator>=7.0.0 (from vllm==0.4.2+cu124)
+  Downloading prometheus_fastapi_instrumentator-7.0.0-py3-none-any.whl.metadata (13 kB)
+Collecting tiktoken==0.6.0 (from vllm==0.4.2+cu124)
+  Downloading tiktoken-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting lm-format-enforcer==0.9.8 (from vllm==0.4.2+cu124)
+  Downloading lm_format_enforcer-0.9.8-py3-none-any.whl.metadata (14 kB)
+Collecting outlines==0.0.34 (from vllm==0.4.2+cu124)
+  Downloading outlines-0.0.34-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: typing-extensions in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (4.11.0)
+Requirement already satisfied: filelock>=3.10.4 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (3.13.1)
+Requirement already satisfied: ray>=2.9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (2.12.0)
+Collecting nvidia-ml-py (from vllm==0.4.2+cu124)
+  Downloading nvidia_ml_py-12.550.52-py3-none-any.whl.metadata (8.6 kB)
+Collecting vllm-nccl-cu12<2.19,>=2.18 (from vllm==0.4.2+cu124)
+  Downloading vllm_nccl_cu12-2.18.1.0.4.0.tar.gz (6.2 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: torch==2.3.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (2.3.0)
+Requirement already satisfied: xformers==0.0.26.post1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from vllm==0.4.2+cu124) (0.0.26.post1)
+Collecting interegular>=0.3.2 (from lm-format-enforcer==0.9.8->vllm==0.4.2+cu124)
+  Downloading interegular-0.3.3-py37-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: packaging in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from lm-format-enforcer==0.9.8->vllm==0.4.2+cu124) (24.0)
+Requirement already satisfied: pyyaml in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from lm-format-enforcer==0.9.8->vllm==0.4.2+cu124) (6.0.1)
+Requirement already satisfied: jinja2 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (3.0.3)
+Collecting lark (from outlines==0.0.34->vllm==0.4.2+cu124)
+  Downloading lark-1.1.9-py3-none-any.whl.metadata (1.9 kB)
+Requirement already satisfied: nest-asyncio in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (1.6.0)
+Requirement already satisfied: cloudpickle in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (3.0.0)
+Collecting diskcache (from outlines==0.0.34->vllm==0.4.2+cu124)
+  Downloading diskcache-5.6.3-py3-none-any.whl.metadata (20 kB)
+Requirement already satisfied: scipy in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (1.13.0)
+Requirement already satisfied: numba in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (0.59.1)
+Requirement already satisfied: joblib in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (1.4.0)
+Requirement already satisfied: referencing in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (0.30.2)
+Requirement already satisfied: jsonschema in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from outlines==0.0.34->vllm==0.4.2+cu124) (4.19.2)
+Requirement already satisfied: regex>=2022.1.18 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from tiktoken==0.6.0->vllm==0.4.2+cu124) (2024.4.28)
+Requirement already satisfied: sympy in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from torch==2.3.0->vllm==0.4.2+cu124) (1.12)
+Requirement already satisfied: networkx in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from torch==2.3.0->vllm==0.4.2+cu124) (3.3)
+Requirement already satisfied: fsspec in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from torch==2.3.0->vllm==0.4.2+cu124) (2024.3.1)
+Requirement already satisfied: starlette<1.0.0,>=0.30.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from prometheus-fastapi-instrumentator>=7.0.0->vllm==0.4.2+cu124) (0.37.2)
+Requirement already satisfied: annotated-types>=0.4.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from pydantic>=2.0->vllm==0.4.2+cu124) (0.6.0)
+Requirement already satisfied: pydantic-core==2.18.2 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from pydantic>=2.0->vllm==0.4.2+cu124) (2.18.2)
+Requirement already satisfied: click>=7.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from ray>=2.9->vllm==0.4.2+cu124) (8.1.7)
+Requirement already satisfied: msgpack<2.0.0,>=1.0.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from ray>=2.9->vllm==0.4.2+cu124) (1.0.8)
+Requirement already satisfied: protobuf!=3.19.5,>=3.15.3 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from ray>=2.9->vllm==0.4.2+cu124) (3.20.3)
+Requirement already satisfied: aiosignal in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from ray>=2.9->vllm==0.4.2+cu124) (1.3.1)
+Requirement already satisfied: frozenlist in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from ray>=2.9->vllm==0.4.2+cu124) (1.4.1)
+Requirement already satisfied: charset-normalizer<4,>=2 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from requests->vllm==0.4.2+cu124) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from requests->vllm==0.4.2+cu124) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from requests->vllm==0.4.2+cu124) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from requests->vllm==0.4.2+cu124) (2024.2.2)
+Requirement already satisfied: huggingface-hub<1.0,>=0.16.4 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from tokenizers>=0.19.1->vllm==0.4.2+cu124) (0.22.2)
+Requirement already satisfied: safetensors>=0.4.1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from transformers>=4.40.0->vllm==0.4.2+cu124) (0.4.3)
+Requirement already satisfied: tqdm>=4.27 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from transformers>=4.40.0->vllm==0.4.2+cu124) (4.65.0)
+Requirement already satisfied: anyio<5,>=3.5.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from openai->vllm==0.4.2+cu124) (4.3.0)
+Requirement already satisfied: distro<2,>=1.7.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from openai->vllm==0.4.2+cu124) (1.8.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from openai->vllm==0.4.2+cu124) (0.27.0)
+Requirement already satisfied: sniffio in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from openai->vllm==0.4.2+cu124) (1.3.1)
+Requirement already satisfied: h11>=0.8 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from uvicorn[standard]->vllm==0.4.2+cu124) (0.14.0)
+Collecting httptools>=0.5.0 (from uvicorn[standard]->vllm==0.4.2+cu124)
+  Downloading httptools-0.6.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.6 kB)
+Collecting python-dotenv>=0.13 (from uvicorn[standard]->vllm==0.4.2+cu124)
+  Downloading python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]->vllm==0.4.2+cu124)
+  Downloading uvloop-0.19.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting watchfiles>=0.13 (from uvicorn[standard]->vllm==0.4.2+cu124)
+  Downloading watchfiles-0.21.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Requirement already satisfied: websockets>=10.4 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from uvicorn[standard]->vllm==0.4.2+cu124) (12.0)
+Requirement already satisfied: httpcore==1.* in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from httpx<1,>=0.23.0->openai->vllm==0.4.2+cu124) (1.0.5)
+Requirement already satisfied: MarkupSafe>=2.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from jinja2->outlines==0.0.34->vllm==0.4.2+cu124) (2.1.3)
+Requirement already satisfied: attrs>=22.2.0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from jsonschema->outlines==0.0.34->vllm==0.4.2+cu124) (23.1.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from jsonschema->outlines==0.0.34->vllm==0.4.2+cu124) (2023.7.1)
+Requirement already satisfied: rpds-py>=0.7.1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from jsonschema->outlines==0.0.34->vllm==0.4.2+cu124) (0.10.6)
+Requirement already satisfied: llvmlite<0.43,>=0.42.0dev0 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from numba->outlines==0.0.34->vllm==0.4.2+cu124) (0.42.0)
+Requirement already satisfied: mpmath>=0.19 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages (from sympy->torch==2.3.0->vllm==0.4.2+cu124) (1.3.0)
+Downloading lm_format_enforcer-0.9.8-py3-none-any.whl (40 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 kB 5.0 MB/s eta 0:00:00
+Downloading outlines-0.0.34-py3-none-any.whl (76 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.5/76.5 kB 7.4 MB/s eta 0:00:00
+Downloading tiktoken-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 22.2 MB/s eta 0:00:00
+Downloading prometheus_fastapi_instrumentator-7.0.0-py3-none-any.whl (19 kB)
+Downloading nvidia_ml_py-12.550.52-py3-none-any.whl (39 kB)
+Downloading openai-1.26.0-py3-none-any.whl (314 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 314.1/314.1 kB 207.2 MB/s eta 0:00:00
+Downloading sentencepiece-0.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 134.7 MB/s eta 0:00:00
+Downloading httptools-0.6.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (318 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 318.5/318.5 kB 225.1 MB/s eta 0:00:00
+Downloading interegular-0.3.3-py37-none-any.whl (23 kB)
+Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+Downloading uvloop-0.19.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 113.9 MB/s eta 0:00:00
+Downloading watchfiles-0.21.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 129.9 MB/s eta 0:00:00
+Downloading diskcache-5.6.3-py3-none-any.whl (45 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.5/45.5 kB 160.3 MB/s eta 0:00:00
+Downloading lark-1.1.9-py3-none-any.whl (111 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.7/111.7 kB 376.5 MB/s eta 0:00:00
+Building wheels for collected packages: vllm, vllm-nccl-cu12
+  Building wheel for vllm (pyproject.toml): started
+  Building wheel for vllm (pyproject.toml): finished with status 'error'
+  Building wheel for vllm-nccl-cu12 (setup.py): started
+  Building wheel for vllm-nccl-cu12 (setup.py): finished with status 'done'
+  Created wheel for vllm-nccl-cu12: filename=vllm_nccl_cu12-2.18.1.0.4.0-py3-none-any.whl size=5418 sha256=417e9e4a12e73ca67049954350202c5b1928211406b2d467e91a3d7916a349e1
+  Stored in directory: /var/tmp/pbs.1918964.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/pip-ephem-wheel-cache-5vcj7wdg/wheels/5b/bc/f2/e5d2e8d3e8a494cca525f8f7e3ea45ea43eb8ddfb59378e99e
+Successfully built vllm-nccl-cu12
+Failed to build vllm
